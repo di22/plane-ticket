@@ -1,0 +1,14 @@
+.steps-section {
+  width: 1170px;
+  height: 312px;
+}
+
+.booking-steps .step {
+  width: 355px;
+  height: 145px;
+}
+
+.booking-steps .step img {
+  width: 55px;
+  height: 77px;
+}

@@ -1,0 +1,56 @@
+.mt-1 {
+  margin-top: 1em;
+}
+
+.mt-2 {
+  margin-top: 2em;
+}
+
+.mt-3 {
+  margin-top: 3em;
+}
+
+.mt-5 {
+  margin-top: 5em;
+}
+
+.mt-10 {
+  margin-top: 10em;
+}
+
+.mb-15 {
+  margin-bottom: 15em;
+}
+
+.me-1 {
+  margin-right: 1em;
+}
+
+.me-2 {
+  margin-right: 1.5em;
+}
+
+.ms-1 {
+  margin-left: 1em;
+}
+
+.ms-2 {
+  margin-left: 1.5em;
+}
+
+.p-2 {
+  padding: 2em;
+}
+
+.p-4 {
+  padding: 4em;
+}
+
+.pe-2 {
+  margin-left: 1.5em;
+}
+
+.px-10 {
+  padding-right: 10em;
+  padding-left: 10em;
+}

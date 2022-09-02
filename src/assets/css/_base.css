@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Russo+One&display=swap');
+
+:root {
+  --color-primary: #0a0b1b;
+  --light-color-primary: #1E1F35;
+
+  --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+
+  --light-grey: rgba(255, 255, 255, 0.7);
+  --light-grey-2: rgba(255, 255, 255, 0.1);
+
+  --white: #FFFFFF;
+  --light-green: #A3FF12;
+  --light-green-2: #a4d969;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  color: #555;
+  font-family: 'Russo One', sans-serif;
+  font-size: 62.5%;
+  font-weight: 100;
+  text-rendering: optimizeLegibility;
+}
+body {
+  line-height: 1.6;
+  background-color: var(--color-primary);
+  background-image: url("~src/assets/img/Banner BG.png"), url("~src/assets/img/BG.png");
+  background-position: center top, center bottom;
+  background-repeat: no-repeat, no-repeat;
+}

@@ -1,0 +1,8 @@
+<section class="passenger d-flex flex-row align-items-center justify-content-between mt-10 px-10 mb-15">
+  <div class="passenger-form width-50">
+    <app-passenger-form (pickUpPassenger)="getPassenger($event)" [passengerToUpdate]="passengerToUpdate"></app-passenger-form>
+  </div>
+  <div class="slots width-50">
+    <app-slots [passenger]="passenger" (changePassenger)="updatePassenger($event)"></app-slots>
+  </div>
+</section>

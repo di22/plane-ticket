@@ -1,0 +1,13 @@
+<label class="form-label text-uppercase fw-400 fs-2">{{ title }}</label>
+
+<input
+  [type]="inputType"
+  [formControl]="control"
+  [placeholder]="placeholder"
+  [ngClass]="{ 'is-invalid': isInvalid }"
+  class="form-control"
+/>
+<div *ngIf="isInvalid && control.errors" class="invalid-feedback">
+  <span class="fs-1" *ngIf="control.errors['required']">Please provide a value</span>
+  <span class="fs-1" *ngIf="control.errors['email']">Please provide a valid email</span>
+</div>

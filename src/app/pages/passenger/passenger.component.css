@@ -1,0 +1,19 @@
+.passenger {
+
+}
+
+.passenger-form {
+  line-height: 70px;
+  height: 500px;
+}
+
+.slots {
+  height: 500px;
+}
+
+.ticket-button {
+  font-family: inherit;
+  width: 200px;
+  line-height: 45px;
+}
+

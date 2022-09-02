@@ -1,0 +1,25 @@
+.space-ship-icon {
+  width: 90px;
+  height: 90px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.moon-travel-header {
+  line-height: 70px;
+}
+
+.moon-travel-sub-header {
+  font-family: 'Inter';
+}
+
+.ticket-button {
+  font-family: inherit;
+  width: 200px;
+  line-height: 45px;
+}
+
+.ticket-button:hover {
+  background: var(--light-green-2);
+}

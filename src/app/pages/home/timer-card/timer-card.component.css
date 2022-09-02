@@ -1,0 +1,42 @@
+.card {
+  position: relative;
+  width: 1170px;
+  height: 312px;
+  margin: 20px;
+  background-color: var(--light-color-primary);
+  background-image: url("~src/assets/img/Shape.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.card-top {
+  width: 100%;
+}
+
+.card-bottom {
+
+}
+
+.igo {
+  background-image: url("~src/assets/img/IGO img.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+}
+
+.igo p {
+  font-family: 'Inter';
+}
+
+.progress-bar {
+  width: 1070px;
+  height: 30px;
+  background-color: var(--light-grey-2);
+}
+
+.progress-bar-slot {
+  width: 16px;
+  height: 12px;
+  transform: skewX(20deg);
+}

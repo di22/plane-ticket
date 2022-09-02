@@ -1,0 +1,19 @@
+<div class="d-flex flex-column align-items-center">
+<div class="d-flex flex-column justify-content-center align-items-center">
+  <h1 class="text-uppercase white-color fs-6 fw-400">passenger card</h1>
+  <p class="fw-500 fs-2 font-family-inter sub-header-form">Enter your name, valid email address and date of birth</p>
+</div>
+
+<form class="form d-flex flex-column width-80" [formGroup]="passengerForm">
+  <app-input [control]="fullName" [isInvalid]="submitted && fullName.invalid" title="Full Name" placeholder="Enter your name"></app-input>
+  <app-input [control]="email" [isInvalid]="submitted && email.invalid" inputType="email" title="Email Address" placeholder="Enter your email address"></app-input>
+  <app-input [control]="dateOfBirth" [isInvalid]="submitted && dateOfBirth.invalid" inputType="date" title="Date Of Birth"
+             placeholder="Enter your date of birth"></app-input>
+</form>
+
+<div class="width-80 d-flex flex-row justify-content-between align-items-end">
+  <img src="assets/icons/Discord.svg" class="width-10 discord cursor-pointer" (click)="pickRandomPassenger()" alt="discord"/>
+  <button class="passenger-form-button text-uppercase fw-400 fs-2 mt-1 width-80" (click)="savePassenger()">{{this.passengerToUpdate ? 'update passenger' : ' add passenger'}}</button>
+</div>
+</div>
+

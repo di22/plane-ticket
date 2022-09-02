@@ -1,0 +1,23 @@
+<div class="slots-bar d-flex align-items-center">
+  <h1 class="text-uppercase fs-2 white-color pe-2">shuttle RX737</h1>
+</div>
+
+<div class="slots-section mt-2">
+  <ng-container *ngFor="let slot of slots">
+    <a class="slot-card click-action" (click)="updatePassenger(slot)"
+       seatDetails [detailsCard]="details" (toggleCard)="toggleCard($event, slot)"
+       [ngClass]="slot.passenger ? 'card-border-grey cursor-pointer' : 'card-border-green'">
+      <span class="ms-2 mt-2">{{slot.seatNumber}}</span>
+      <img *ngIf="slot.passenger" class="slot-igo" src="assets/img/IGO%20img.svg" alt="pick up seat"/>
+    </a>
+  </ng-container>
+</div>
+
+<div #details>
+  <div *ngIf="viewDetails" class="seat-details d-flex flex-column justify-content-center align-items-center">
+    <img src="assets/icons/seat-icon.svg" alt="seat details"/>
+    <h3 class="fs-2 white-color">{{passengerDetails?.fullName}}</h3>
+    <p class="fs-1">{{passengerDetails?.age}}</p>
+  </div>
+
+</div>

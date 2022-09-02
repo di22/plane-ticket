@@ -1,0 +1,28 @@
+<div class="card d-flex flex-column p-4">
+  <div class="card-top d-flex flex-row">
+    <div class="d-flex flex-row justify-content-start align-items-center width-50">
+      <div class="igo me-2"></div>
+      <div class="d-flex flex-column">
+        <h1 class="white-color fw-400 fs-5">The Weekend Getaway</h1>
+        <p class="text-uppercase fw-500 fs-2">price = 24,999 ISK</p>
+      </div>
+    </div>
+    <div class="timer width-50 mt-3 d-flex flex-column justify-content-center">
+      <span class="light-grey-color text-uppercase fw-500 fs-2">SALE END IN</span>
+      <div class="white-color" timer (value)="updateTime($event)">
+        <span class="fw-400 fs-6 me-2">{{timeCounter.days}} <span class="fs-2">D</span></span>
+        <span class="fw-400 fs-6 me-2">{{timeCounter.hours}} <span class="fs-2">H</span></span>
+        <span class="fw-400 fs-6 me-2">{{timeCounter.minutes}} <span class="fs-2">M</span></span>
+        <span class="fw-400 fs-6">{{timeCounter.seconds}} <span class="fs-2">S</span></span>
+      </div>
+    </div>
+  </div>
+  <div class="card-bottom mt-5 d-flex flex-column">
+    <span class="white-color fw-400 fs-2">Tickets left ( {{remainingPercentage}}% )</span>
+    <div class="progress-bar mt-2 d-flex flex-row align-items-center p-2">
+      <ng-container *ngFor="let prog of progress; let i = index">
+        <div class="progress-bar-slot ms-1" [ngClass]="prog ? 'bg-green' : 'bg-grey'"></div>
+      </ng-container>
+    </div>
+  </div>
+</div>

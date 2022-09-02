@@ -1,0 +1,36 @@
+.footer {
+  padding: 10em;
+}
+
+.hero-text-box-footer {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  transform: translate(0%, 5%);
+}
+
+.frame-icon {
+  height: 11px;
+}
+
+.social-icons img {
+  width: 60px;
+  height: 60px;
+}
+
+.sections span {
+  font-size: 1.5em;
+  font-weight: 500;
+  line-height: 40px;
+  text-align: center;
+  color: var(--light-grey);
+}
+
+.copy-right {
+  color: var(--light-grey);
+}

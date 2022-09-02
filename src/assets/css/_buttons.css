@@ -1,0 +1,13 @@
+button {
+  line-height: 45px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.button-width {
+  width: auto;
+}
+
+button:active {
+  transform: translateY(5px);
+}
